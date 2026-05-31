@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- 
+    CPE - CuidaPraEstudar
+    Projeto Integrador - Disciplina: Introdução à Programação Web
+    Integrantes: [Nome 1 - Matrícula] [Nome 2 - Matrícula]
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPE · Conquistas — Lucas</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gamificacao.css" />
+</head>
+<body class="gamif-page">
+
+  <!-- ============ APP NAVBAR ============ -->
+  <nav class="app-navbar">
+    <a href="index.html" class="navbar-logo">
+      <span class="logo-cpe">CPE</span>
+    </a>
+    <ul class="app-nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="#">Check-in</a></li>
+      <li><a href="#">Minha Jornada</a></li>
+      <li><a href="#">Biblioteca</a></li>
+      <li><a href="gamificacao.html" class="active">Conquistas</a></li>
+    </ul>
+    <div class="app-avatar" title="Lucas">L</div>
+  </nav>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="gamif-container">
+
+    <!-- ---- Header Block ---- -->
+    <div class="gamif-header">
+      <div class="gamif-greet">
+        <h1>Olá, Lucas! 👋</h1>
+        <p>Continue cuidando de você — cada dia conta na sua jornada.</p>
+        <span class="level-badge">🌟 Nível 4 · Cuidador</span>
+        <div class="progress-section">
+          <div class="progress-label">
+            <span>Progresso para o Nível 5</span>
+            <span>780 / 1000 XP</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 78%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-icon">🔥</span>
+        <span class="stat-num">12</span>
+        <span class="stat-label">dias seguidos</span>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-icon">⭐</span>
+        <span class="stat-num">340</span>
+        <span class="stat-label">pontos de hábito</span>
+      </div>
+    </div>
+
+    <!-- ---- Week Trail ---- -->
+    <div class="gamif-section">
+      <div class="gamif-section-header">
+        <h2>Trilha desta semana</h2>
+      </div>
+      <p>Complete ações de autocuidado para avançar na jornada.</p>
+      <div class="week-trail">
+        <div class="day-node">
+          <div class="day-circle done">✓</div>
+          <span class="day-label">Seg</span>
+        </div>
+        <div class="day-node">
+          <div class="day-circle done">✓</div>
+          <span class="day-label">Ter</span>
+        </div>
+        <div class="day-node">
+          <div class="day-circle done">✓</div>
+          <span class="day-label">Qua</span>
+        </div>
+        <div class="day-node">
+          <div class="day-circle done">✓</div>
+          <span class="day-label">Qui</span>
+        </div>
+        <div class="day-node">
+          <div class="day-circle today with-badge">😊</div>
+          <span class="day-label">Sex</span>
+        </div>
+        <div class="day-node">
+          <div class="day-circle pending"></div>
+          <span class="day-label">Sáb</span>
+        </div>
+        <div class="day-node">
+          <div class="day-circle pending"></div>
+          <span class="day-label">Dom</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- Achievements ---- -->
+    <div class="gamif-section">
+      <div class="gamif-section-header">
+        <h2>Conquistas recentes</h2>
+        <a href="#">Ver todas →</a>
+      </div>
+      <p>Cada conquista celebra um hábito de autocuidado — nunca um estado emocional.</p>
+
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon green">🌱</div>
+          <h4>Primeira Semana</h4>
+          <p>7 check-ins consecutivos</p>
+          <span class="xp-badge">+50 XP</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon red">🔥</div>
+          <h4>Em Chamas</h4>
+          <p>12 dias seguidos</p>
+          <span class="xp-badge">+80 XP</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon purple">🧘</div>
+          <h4>Momento de Paz</h4>
+          <p>Biblioteca 5 vezes</p>
+          <span class="xp-badge">+40 XP</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon blue">📚</div>
+          <h4>Leitor Curioso</h4>
+          <p>3 micro-formações feitas</p>
+          <span class="xp-badge">+60 XP</span>
+        </div>
+        <div class="achievement-card locked reveal">
+          <div class="achievement-icon gray">🤝</div>
+          <h4>Pedi Ajuda</h4>
+          <p>Usou o Botão de Acolhimento</p>
+          <span class="xp-badge">+100 XP</span>
+        </div>
+        <div class="achievement-card locked reveal">
+          <div class="achievement-icon gray">🏆</div>
+          <h4>Mestre do Hábito</h4>
+          <p>30 dias no mês</p>
+          <span class="xp-badge">+150 XP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- Goals ---- -->
+    <div class="gamif-section">
+      <div class="gamif-section-header">
+        <h2>Suas próximas metas</h2>
+      </div>
+      <p>Pequenos hábitos, grandes mudanças.</p>
+
+      <div class="goals-list">
+        <div class="goal-item reveal">
+          <span class="goal-emoji">🌿</span>
+          <div class="goal-info">
+            <h4>Semana Completa</h4>
+            <p>5 de 7 concluídos</p>
+            <div class="progress-bar" style="max-width:220px">
+              <div class="progress-fill" style="width:71%"></div>
+            </div>
+          </div>
+          <span class="goal-badge">Trilha Desbravadora</span>
+          <span class="goal-xp">+120 XP</span>
+        </div>
+
+        <div class="goal-item reveal">
+          <span class="goal-emoji">📖</span>
+          <div class="goal-info">
+            <h4>Leitor da Semana</h4>
+            <p>2 de 5 concluídos</p>
+            <div class="progress-bar" style="max-width:220px">
+              <div class="progress-fill" style="width:40%"></div>
+            </div>
+          </div>
+          <span class="goal-badge">Badge Leitor Curioso</span>
+          <span class="goal-xp">+60 XP</span>
+        </div>
+
+        <div class="goal-item reveal">
+          <span class="goal-emoji">🧘</span>
+          <div class="goal-info">
+            <h4>5 Min de Respiração</h4>
+            <p>3 de 5 concluídos</p>
+            <div class="progress-bar" style="max-width:220px">
+              <div class="progress-fill" style="width:60%"></div>
+            </div>
+          </div>
+          <span class="goal-badge">Momento Zen</span>
+          <span class="goal-xp">+40 XP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- Leaderboard ---- -->
+    <div class="gamif-section">
+      <div class="gamif-section-header">
+        <h2>Turma em movimento</h2>
+      </div>
+      <p>Nomes anônimos — celebramos os hábitos coletivos, não a comparação.</p>
+
+      <div class="leaderboard reveal">
+        <div class="leaderboard-row">
+          <span class="rank-num">1°</span>
+          <span class="rank-icon">🌻</span>
+          <span class="rank-name">Estudante Curioso</span>
+          <div class="rank-bar-wrap">
+            <div class="rank-bar" style="width:100%"></div>
+          </div>
+          <span class="rank-days">18 dias</span>
+        </div>
+        <div class="leaderboard-row">
+          <span class="rank-num">2°</span>
+          <span class="rank-icon">🌿</span>
+          <span class="rank-name">Mente Tranquila</span>
+          <div class="rank-bar-wrap">
+            <div class="rank-bar" style="width:83%"></div>
+          </div>
+          <span class="rank-days">15 dias</span>
+        </div>
+        <div class="leaderboard-row is-me">
+          <span class="rank-num">3°</span>
+          <span class="rank-icon">🔥</span>
+          <span class="rank-name">Você (Lucas) ← você</span>
+          <div class="rank-bar-wrap">
+            <div class="rank-bar" style="width:67%"></div>
+          </div>
+          <span class="rank-days">12 dias</span>
+        </div>
+        <div class="leaderboard-row">
+          <span class="rank-num">4°</span>
+          <span class="rank-icon">💛</span>
+          <span class="rank-name">Coração Presente</span>
+          <div class="rank-bar-wrap">
+            <div class="rank-bar" style="width:56%"></div>
+          </div>
+          <span class="rank-days">10 dias</span>
+        </div>
+        <div class="leaderboard-row">
+          <span class="rank-num">5°</span>
+          <span class="rank-icon">👟</span>
+          <span class="rank-name">Passos Firmes</span>
+          <div class="rank-bar-wrap">
+            <div class="rank-bar" style="width:44%"></div>
+          </div>
+          <span class="rank-days">8 dias</span>
+        </div>
+        <div class="leaderboard-note">
+          🔒 Nomes gerados automaticamente. Nenhum dado individual é compartilhado sem consentimento.
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- Points System ---- -->
+    <div class="gamif-section">
+      <div class="gamif-section-header">
+        <h2>O que gera pontos?</h2>
+      </div>
+      <p>XP por ações de hábito — nunca pelo que você sentiu.</p>
+
+      <div class="points-grid reveal">
+        <div class="points-item">
+          <span class="points-icon">😊</span>
+          <span class="points-desc">Realizar check-in diário</span>
+          <span class="points-xp">+10 XP</span>
+        </div>
+        <div class="points-item">
+          <span class="points-icon">📚</span>
+          <span class="points-desc">Acessar a Biblioteca de Regulação</span>
+          <span class="points-xp">+15 XP</span>
+        </div>
+        <div class="points-item">
+          <span class="points-icon">🎓</span>
+          <span class="points-desc">Completar uma micro-formação</span>
+          <span class="points-xp">+20 XP</span>
+        </div>
+        <div class="points-item">
+          <span class="points-icon">⚙️</span>
+          <span class="points-desc">Configurar perfil de bem-estar</span>
+          <span class="points-xp">+25 XP</span>
+        </div>
+        <div class="points-item">
+          <span class="points-icon">🔥</span>
+          <span class="points-desc">7 check-ins consecutivos</span>
+          <span class="points-xp">+50 XP</span>
+        </div>
+        <div class="points-item">
+          <span class="points-icon">⭐</span>
+          <span class="points-desc">Completar trilha semanal</span>
+          <span class="points-xp">+100 XP</span>
+        </div>
+      </div>
+
+      <div class="notice-box reveal">
+        <span>⚠️</span>
+        <span>Importante: um aluno que registra estar mal não perde pontos. Um que registra estar bem não ganha vantagem sobre os demais. A gamificação reconhece o hábito de autocuidado — nunca o resultado emocional.</span>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,544 @@
+/* ============================================
+   CPE - Gamificação Page Styles
+   ============================================ */
+
+.gamif-page {
+  background: var(--cream);
+  min-height: 100vh;
+}
+
+/* ---- App Navbar ---- */
+
+.app-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250,246,240,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(45,74,62,0.08);
+  padding: 0 var(--space-lg);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  list-style: none;
+}
+
+.app-nav-links a {
+  text-decoration: none;
+  color: var(--text-mid);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.app-nav-links a:hover {
+  color: var(--green-dark);
+}
+
+.app-nav-links a.active {
+  color: var(--green-dark);
+  border-bottom-color: var(--green-dark);
+  font-weight: 700;
+}
+
+.app-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--green-mid);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ---- Main Container ---- */
+
+.gamif-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-lg);
+}
+
+/* ---- Header Block ---- */
+
+.gamif-header {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: var(--space-sm);
+  align-items: start;
+  margin-bottom: var(--space-lg);
+}
+
+.gamif-greet h1 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.gamif-greet p {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  margin-bottom: var(--space-sm);
+}
+
+.level-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-dark);
+  color: var(--white);
+  border-radius: var(--radius-full);
+  padding: 6px 16px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.progress-section {
+  margin-top: 10px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: var(--text-light);
+  margin-bottom: 6px;
+}
+
+.stat-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(45,74,62,0.06);
+  text-align: center;
+  min-width: 120px;
+}
+
+.stat-card .stat-icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.stat-card .stat-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--text-dark);
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+}
+
+.stat-card .stat-label {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  display: block;
+  margin-top: 4px;
+}
+
+/* ---- Section Headers ---- */
+
+.gamif-section {
+  margin-bottom: var(--space-lg);
+}
+
+.gamif-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.gamif-section-header h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.gamif-section-header a {
+  font-size: 0.82rem;
+  color: var(--green-mid);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.gamif-section > p {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  margin-bottom: var(--space-sm);
+}
+
+/* ---- Week Trail ---- */
+
+.week-trail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.day-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 52px;
+}
+
+.day-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  position: relative;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.day-circle.done {
+  background: var(--green-dark);
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.day-circle.today {
+  background: var(--white);
+  border-color: var(--green-mid);
+  box-shadow: 0 0 0 4px var(--green-soft);
+}
+
+.day-circle.today.with-badge::after {
+  content: 'Hoje';
+  position: absolute;
+  top: -22px;
+  background: var(--green-dark);
+  color: var(--white);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: var(--radius-full);
+}
+
+.day-circle.pending {
+  background: var(--cream);
+  border-color: var(--green-pale);
+  color: transparent;
+}
+
+.day-circle.pending::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--green-pale);
+  border-radius: 50%;
+}
+
+.day-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+/* ---- Achievements Grid ---- */
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--space-sm);
+}
+
+.achievement-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  text-align: center;
+  border: 1px solid rgba(45,74,62,0.06);
+  transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.achievement-card.locked {
+  opacity: 0.5;
+  filter: grayscale(0.6);
+}
+
+.achievement-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin: 0 auto var(--space-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.achievement-icon.green  { background: var(--green-soft); }
+.achievement-icon.red    { background: #FFEBEE; }
+.achievement-icon.purple { background: #F0EBFF; }
+.achievement-icon.blue   { background: #EBF4FF; }
+.achievement-icon.gray   { background: #F0F0F0; }
+
+.achievement-card h4 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.achievement-card p {
+  font-size: 0.68rem;
+  color: var(--text-light);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+/* ---- Goals List ---- */
+
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.goal-item {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 16px var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  border: 1px solid rgba(45,74,62,0.06);
+  border-left: 4px solid var(--green-light);
+  transition: all 0.2s;
+}
+
+.goal-item:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.goal-item:nth-child(2) { border-left-color: var(--purple-soft); }
+.goal-item:nth-child(3) { border-left-color: var(--salmon); }
+
+.goal-emoji {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.goal-info {
+  flex: 1;
+}
+
+.goal-info h4 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+
+.goal-info p {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.goal-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+.goal-item:nth-child(2) .goal-badge { background: #F0EBFF; color: #7B6CAA; }
+.goal-item:nth-child(3) .goal-badge { background: #FFEBEE; color: #C0504D; }
+
+.goal-xp {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  white-space: nowrap;
+}
+
+/* ---- Leaderboard ---- */
+
+.leaderboard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(45,74,62,0.06);
+  box-shadow: var(--shadow-sm);
+}
+
+.leaderboard-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 14px var(--space-md);
+  border-bottom: 1px solid var(--green-soft);
+  transition: background 0.2s;
+}
+
+.leaderboard-row:last-of-type {
+  border-bottom: none;
+}
+
+.leaderboard-row:hover {
+  background: var(--cream);
+}
+
+.leaderboard-row.is-me {
+  background: var(--green-soft);
+}
+
+.rank-num {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-light);
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.rank-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.rank-name {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.is-me .rank-name {
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+.rank-bar-wrap {
+  flex: 2;
+  background: var(--green-soft);
+  height: 8px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.rank-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--green-light), var(--green-dark));
+  border-radius: var(--radius-full);
+}
+
+.rank-days {
+  font-size: 0.82rem;
+  color: var(--text-mid);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.leaderboard-note {
+  padding: 10px var(--space-md);
+  font-size: 0.75rem;
+  color: var(--text-light);
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ---- Points System ---- */
+
+.points-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.points-item {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(45,74,62,0.06);
+}
+
+.points-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.points-desc {
+  flex: 1;
+  font-size: 0.82rem;
+  color: var(--text-mid);
+  line-height: 1.4;
+}
+
+.points-xp {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  background: var(--green-soft);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.notice-box {
+  background: var(--green-soft);
+  border-radius: var(--radius-md);
+  padding: 14px var(--space-md);
+  font-size: 0.82rem;
+  color: var(--green-dark);
+  line-height: 1.6;
+  display: flex;
+  gap: 8px;
+  margin-top: var(--space-sm);
+  border: 1px solid var(--green-pale);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 768px) {
+  .gamif-header { grid-template-columns: 1fr; }
+  .achievements-grid { grid-template-columns: repeat(3, 1fr); }
+  .points-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .achievements-grid { grid-template-columns: repeat(2, 1fr); }
+  .points-grid { grid-template-columns: 1fr; }
+}

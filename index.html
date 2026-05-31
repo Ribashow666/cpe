@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- 
+    CPE - CuidaPraEstudar
+    Projeto Integrador - Disciplina: Introdução à Programação Web
+    Integrantes:
+    Ailton Guilherme Ribeiro Ribas - 00000866953
+    Ana Beatriz Ribeiro Santana - 00000866951
+    Ana Paula de Oliveira Reis - 00000866967
+    Caio da Silva Araújo - 00000866969
+    Jhonatan Rafael Freitas - 00000866944
+    Luana Rêgo de Castro - 00000866975
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPE · CuidaPraEstudar — Cuidar para aprender melhor</title>
+  <meta name="description" content="Plataforma de suporte socioemocional para toda a comunidade escolar." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-logo">
+      <span class="logo-cpe">CPE</span><span class="logo-sub">CuidaPraEstudar</span>
+    </a>
+    <ul class="navbar-links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#como-funciona">Como Funciona</a></li>
+      <li><a href="#estudantes">Para Estudantes</a></li>
+      <li><a href="#educadores">Para Educadores</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+    </ul>
+    <a href="login.html" class="btn-primary">Começar Agora</a>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="inicio" class="hero">
+    <!-- Left -->
+    <div class="hero-left">
+      <div class="hero-badge">🌿 Saúde Mental na Educação</div>
+      <h1 class="hero-title">
+        Cuidar para
+        <em class="hero-title-italic">aprender melhor.</em>
+      </h1>
+      <p class="hero-desc">
+        Uma plataforma digital de suporte socioemocional para estudantes e educadores — bem-estar, prevenção e acolhimento no cotidiano escolar.
+      </p>
+      <div class="hero-actions">
+        <a href="login.html" class="btn-primary">Conheça o CPE</a>
+        <a href="#como-funciona" class="btn-secondary">Ver funcionalidades</a>
+      </div>
+      <ul class="hero-features">
+        <li>Gratuito para escolas públicas</li>
+        <li>Dados protegidos</li>
+        <li>Sem diagnósticos</li>
+      </ul>
+    </div>
+
+    <!-- Right: Check-in Card -->
+    <div class="hero-right">
+      <div class="checkin-card">
+        <h3>Como você está hoje?</h3>
+        <p>Toque no emoji que representa seu momento.</p>
+        <div class="emoji-row">
+          <button class="emoji-btn" title="Muito feliz">😄</button>
+          <button class="emoji-btn" title="Feliz">🙂</button>
+          <button class="emoji-btn selected" title="Tranquilo">😌</button>
+          <button class="emoji-btn" title="Ansioso">😟</button>
+          <button class="emoji-btn" title="Triste">😔</button>
+        </div>
+        <div class="checkin-history">
+          <div class="checkin-item">
+            <span>😊</span>
+            <span>Ontem: <strong>Tranquilo</strong> — tudo certo</span>
+          </div>
+          <div class="checkin-item">
+            <span>😟</span>
+            <span>2 dias atrás: <strong>Ansioso</strong> com a prova</span>
+          </div>
+        </div>
+        <div class="checkin-streak">
+          <span>🔥</span>
+          <div style="flex:1">
+            <div>Sequência de check-ins: <strong>5 dias</strong></div>
+            <div class="streak-bar"><div class="streak-fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS BAND ============ -->
+  <div class="stats-band">
+    <div class="stats-inner">
+      <div class="stat-item reveal">
+        <h3><span class="counter" data-target="59.7" data-suffix="%">59.7%</span></h3>
+        <p>universitários com sofrimento psíquico (Fiocruz, 2022)</p>
+      </div>
+      <div class="stat-item reveal">
+        <h3><span class="counter" data-target="30" data-suffix="%">30%</span></h3>
+        <p>adolescentes relatam tristeza frequente (PeNSE, 2024)</p>
+      </div>
+      <div class="stat-item reveal">
+        <h3><span class="counter" data-target="18.5" data-suffix="%">18.5%</span></h3>
+        <p>pensam que a vida não vale a pena (PeNSE, 2024)</p>
+      </div>
+      <div class="stat-item reveal">
+        <h3><span class="counter" data-target="34.1" data-suffix="%">34.1%</span></h3>
+        <p>das escolas com profissional de saúde mental (PeNSE, 2024)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="como-funciona" class="how-section">
+    <div class="section-label">
+      <span class="tag-badge">Como Funciona</span>
+    </div>
+    <h2 class="section-title">Simples, seguro e acolhedor.</h2>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <span class="feature-num">01</span>
+        <div class="feature-icon yellow">😊</div>
+        <h3>Check-in Diário</h3>
+        <p>O estudante registra como está em menos de 30 segundos. Sem julgamento, com privacidade total.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-num">02</span>
+        <div class="feature-icon green">📊</div>
+        <h3>Painel da Turma</h3>
+        <p>O professor visualiza o clima emocional coletivo e ajusta a aula com mais empatia.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-num">03</span>
+        <div class="feature-icon purple">💛</div>
+        <h3>Botão de Acolhimento</h3>
+        <p>O aluno pede apoio discretamente. O responsável é notificado em até 15 minutos.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-num">04</span>
+        <div class="feature-icon blue">📚</div>
+        <h3>Biblioteca &amp; Formação</h3>
+        <p>Recursos de regulação emocional e micro-formações de 5 a 15 minutos para educadores.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PERSONAS ============ -->
+  <section id="estudantes" class="personas-section">
+    <div class="personas-inner">
+      <div class="section-label">
+        <span class="tag-badge">Para Quem é o CPE?</span>
+      </div>
+      <h2 class="section-title">Para toda a comunidade escolar.</h2>
+
+      <div class="personas-grid">
+        <!-- Estudante -->
+        <div class="persona-card reveal">
+          <div class="persona-header">
+            <div class="persona-avatar red">🎒</div>
+            <div>
+              <div class="persona-name">Lucas, 16 anos</div>
+              <div class="persona-role">Estudante</div>
+            </div>
+          </div>
+          <p class="persona-quote">"A minha cabeça simplesmente trava antes das provas."</p>
+          <ul class="persona-list">
+            <li>Check-in de humor diário</li>
+            <li>Biblioteca de regulação</li>
+            <li>Botão de Acolhimento</li>
+          </ul>
+        </div>
+
+        <!-- Educadora -->
+        <div class="persona-card reveal" id="educadores">
+          <div class="persona-header">
+            <div class="persona-avatar yellow">👩‍🏫</div>
+            <div>
+              <div class="persona-name">Prof.ª Helena, 42 anos</div>
+              <div class="persona-role">Educadora</div>
+            </div>
+          </div>
+          <p class="persona-quote">"Percebo que o aluno não está bem, mas não sei o que fazer."</p>
+          <ul class="persona-list">
+            <li>Painel da turma</li>
+            <li>Micro-formações</li>
+            <li>Alertas de encaminhamento</li>
+          </ul>
+        </div>
+
+        <!-- Gestão -->
+        <div class="persona-card reveal">
+          <div class="persona-header">
+            <div class="persona-avatar green">🏫</div>
+            <div>
+              <div class="persona-name">Gestão Escolar</div>
+              <div class="persona-role">Coordenação</div>
+            </div>
+          </div>
+          <p class="persona-quote">"Queremos criar cultura de cuidado, não só agir em crises."</p>
+          <ul class="persona-list">
+            <li>Relatórios institucionais</li>
+            <li>Indicadores de bem-estar</li>
+            <li>Planejamento de ações</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STORYTELLING ============ -->
+  <section class="story-section">
+    <p class="story-text reveal">
+      Era uma manhã de terça-feira quando Lucas entrou na sala com o peso invisível de uma noite sem sono. A Prof.ª Helena percebeu que ele não estava bem — mas não tinha a ferramenta para ajudá-lo. Era esse cotidiano que o CPE se propõe a transformar.
+    </p>
+    <span class="story-attribution">— O Muro Invisível · Storytelling do Projeto CPE</span>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section id="sobre" class="cta-section">
+    <h2 class="cta-title reveal">Sua escola pode ser um lugar de cuidado.</h2>
+    <p class="cta-desc reveal">Junte-se ao CPE e transforme o bem-estar emocional em parte da rotina escolar.</p>
+    <div class="cta-actions reveal">
+      <a href="login.html" class="btn-primary">Quero minha escola no CPE</a>
+      <a href="#como-funciona" class="btn-secondary">Saiba mais</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">CPE<span style="font-weight:400;font-size:0.85rem;opacity:0.75"> CuidaPraEstudar</span></div>
+        <p class="footer-desc">Estratégias tecnológicas para a promoção da saúde mental no contexto educacional.</p>
+        <div class="footer-ods">
+          <span class="footer-ods-tag">ODS 3 · Saúde e Bem-Estar</span>
+          <span class="footer-ods-tag">ODS 4 · Educação de Qualidade</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Plataforma</h4>
+        <ul>
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#estudantes">Para Estudantes</a></li>
+          <li><a href="#educadores">Para Educadores</a></li>
+          <li><a href="login.html">Entrar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Sobre o Projeto</h4>
+        <ul>
+          <li><a href="#">Nossa Missão</a></li>
+          <li><a href="#">Pesquisa &amp; Dados</a></li>
+          <li><a href="#">Parceiros</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#">Cadastre sua escola</a></li>
+          <li><a href="#">Suporte</a></li>
+          <li><a href="#">Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 CuidaPraEstudar · UNICAP · Sistemas para Internet · Projeto Integrador 7 · Grupo 3
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
